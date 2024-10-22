@@ -1,2 +1,5 @@
 class Address < ApplicationRecord
-end
+    has_many :orders
+    belongs_to :addressable, polymorphic: true
+  end
+  
